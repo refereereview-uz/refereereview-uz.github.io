@@ -36,3 +36,4 @@ footer { border-top: 1px solid var(--line); margin-top: 60px; padding: 26px 0 40
 footer .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; }
 [data-l="en"] { display: none; } body.en [data-l="uz"] { display: none; } body.en [data-l="en"] { display: revert; }
 @media (max-width: 640px) { header.top nav a.hide-s { display: none; } }
+.small { color: var(--muted, #9aa39a); font-size: .92rem; }
