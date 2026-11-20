@@ -13,3 +13,12 @@
     set(lang);
   });
 })();
+
+// contact links: the address is assembled only on click (not written in the page)
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest("a[data-u]");
+  if (!a) return;
+  e.preventDefault();
+  var r = function (x) { return x.split("").reverse().join(""); };
+  location.href = "mailto:" + r(a.dataset.u) + "@" + r(a.dataset.d) + "?subject=Referee%20Review";
+});
