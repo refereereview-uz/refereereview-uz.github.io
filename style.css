@@ -48,5 +48,5 @@ header.top nav .soc:hover { color:#0b0d08; background:var(--lime); border-color:
 .cta:hover { transform:translateY(-1px); text-decoration:none; filter:brightness(1.08); }
 @media (max-width:560px){ header.top nav .soc{ display:none } .cta{ flex:1 } }
 
-.cta.mailbtn { background:#1d231f; border:1px solid var(--lime-d); color:var(--text); }
+.cta.mailbtn { display:inline-flex; background:#1d231f; border:1px solid var(--lime-d); color:var(--text); }
 .cta.mailbtn svg { color:var(--lime); }
